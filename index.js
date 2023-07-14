@@ -1,4 +1,9 @@
-const express = requi('express');
+const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('OMGOMGOMG!!!!!');
+})
+
+app.listen(8080, () => console.log('server working...'));
 
